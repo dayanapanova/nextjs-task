@@ -1,6 +1,5 @@
 import Layout from "../componets/layout/Layout";
 import Link from 'next/link';
-import { Fragment } from 'react';
 import AboutUs from "./aboutus";
 import Slider from '../componets/layout/Slider';
 import Dropdown from "../componets/layout/Dropdown";

@@ -60,6 +60,32 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  .nav-items-links li {
+    display: none;
+  }
+}
+
+.about-us-holder {
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.about-us-single {
+  flex-basis: 50%;
+}
+
+.about-us-holder p {
+  margin: 10px;
+}
+
+
+
 
 
 

@@ -12,7 +12,7 @@ function Dropdown() {
                 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         </Head>
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Language
             <span class="caret"></span></button>
             <ul class="dropdown-menu">
                 <li><a href="#">HTML</a></li>

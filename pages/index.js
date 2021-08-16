@@ -1,28 +1,38 @@
-import Layout from "../componets/layout/Layout";
-import Link from 'next/link';
+
 import Slider from '../componets/layout/Slider';
 import Dropdown from "../componets/layout/Dropdown";
 import AboutUs from "../componets/layout/AboutUs";
 import OurWork from "../componets/layout/OurWork";
 import ContactUs from "../componets/layout/ContactUs";
+import  ScrollToTop  from "../componets/layout/ScrollToTop";
+import { useRef } from 'react';
 function HomePage() {
+    const ContactUsSection = useRef(null);
+    const goToContactUsSection = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        })
+    }
+
     return (
             <div>
-            <header className='header'>
-                <div>Logo</div>
-                <ul className='nav-items-links'>
-                    <li><a>Home</a></li>
-                    <li><Link href='/aboutus'>About us</Link></li>
-                    <li><Link href='/ourwork'>Our Work</Link></li>
-                    <li><Link href='/ourproducts'>Our Products</Link></li>
-                    <li><Link href='/contactus'>Contact us</Link></li>
-                    <li><Dropdown/></li>
-                </ul>
-            </header>
-            <Slider/>
-            <AboutUs/>
-            <OurWork/>
-            <ContactUs/>
+                    <ScrollToTop/>
+                    <header className='header'>
+                        <div>Logo</div>
+                        <ul className='nav-items-links'>
+                            <li><a>Home</a></li>
+                            <li><a>About us</a></li>
+                            <li><a>Our Work</a></li>
+                            <li><a>Our Products</a></li>
+                            <li><a onClick={goToContactUsSection}>Contact Us</a></li>
+                            <li><Dropdown/></li>
+                        </ul>
+                    </header>
+                    <Slider/>
+                    <AboutUs/>
+                    <OurWork/>
+                    <ContactUs ref={ContactUsSection}/>
             </div>
             
     )

@@ -9,36 +9,24 @@
 body {
   background-color: rgb(77, 77, 77);
 }
-.container-global {
-  margin: 0 auto;
-}
 
-.container {
-  object-fit: cover;
+.padding {
+  margin: 60px;
 }
-
 .contact-holder {
-  width: 500px;
-  height: 250px;
+  width: 900px;
+  height: 450px;
   margin: 0 auto;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border: 1px solid #ccc;
 }
 
 .contact-holder-single {
   flex-basis: 50%;
 }
 
-.contact-button {
-  display: block;
-  width: 180px;
-  color: #fff;
-  background-color: blueviolet;
-  margin: 5px;
-}
 
 .header {
   display: flex;
@@ -83,6 +71,8 @@ body {
 .about-us-holder p {
   margin: 10px;
 }
+
+
 
 
 

@@ -1,9 +1,10 @@
 import Layout from "../componets/layout/Layout";
 import Link from 'next/link';
-import AboutUs from "./aboutus";
 import Slider from '../componets/layout/Slider';
 import Dropdown from "../componets/layout/Dropdown";
-
+import AboutUs from "../componets/layout/AboutUs";
+import OurWork from "../componets/layout/OurWork";
+import ContactUs from "../componets/layout/ContactUs";
 function HomePage() {
     return (
             <div>
@@ -19,6 +20,9 @@ function HomePage() {
                 </ul>
             </header>
             <Slider/>
+            <AboutUs/>
+            <OurWork/>
+            <ContactUs/>
             </div>
             
     )

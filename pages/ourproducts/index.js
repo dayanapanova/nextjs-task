@@ -12,7 +12,7 @@ function OurProducts() {
                     <li><Link href='/contactus'>Contact us</Link></li>
                     <li><Dropdown/></li>
                 </ul>
-            </header>
+        </header>
     )
 }
 

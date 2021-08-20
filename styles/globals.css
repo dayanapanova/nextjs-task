@@ -13,9 +13,13 @@ body {
 .padding {
   margin: 60px;
 }
+.contact-us-title {
+  margin-top: 50px;
+  text-align: center;
+}
 .contact-holder {
   width: 900px;
-  height: 450px;
+  height: 350px;
   margin: 0 auto;
   padding: 10px;
   display: flex;
@@ -25,6 +29,26 @@ body {
 
 .contact-holder-single {
   flex-basis: 50%;
+}
+
+.input-name {
+  width: 340px;
+  margin: 10px;
+  outline: none;
+}
+
+.input-message {
+  width: 340px;
+  height: 60px;
+  margin: 10px;
+  outline: none;
+}
+
+.btn-success {
+  display: block;
+  width: 340px;
+  margin: 10px;
+  outline: none;
 }
 
 
@@ -57,7 +81,7 @@ body {
 .about-us-holder {
   margin: 0 auto;
   width: 1000px;
-  height: 500px;
+  height: 350px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -96,6 +120,24 @@ body {
   to {
     transform: translateY(-1px);
   }
+}
+.row {
+  margin: 0 auto;
+}
+
+.col-md-3 {
+  margin: 10px 0;
+}
+
+.block-tabs {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.tabs {
+  cursor: pointer;
+  margin: 15px;
 }
 
 

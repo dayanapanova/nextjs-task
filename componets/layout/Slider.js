@@ -1,7 +1,11 @@
 import Head from 'next/head';
 function Slider() {
+    const dataSlider = [
+        { id: 1, text: 'cover1' },
+        { id: 2, text: 'cover2' },
+      ]
     return(
-            <div className='container'>
+        <div className='container'>
                 <Head>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
@@ -18,8 +22,7 @@ function Slider() {
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
-
-                                <div class="carousel-inner">
+                            <div class="carousel-inner">
                                     <div class="item active">
                                     <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
                                     <div class="carousel-caption">
@@ -36,16 +39,16 @@ function Slider() {
                                     </div>
                                     </div>
 
-                        <div class="item">
-                        <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="New York"/>
-                        <div class="carousel-caption">
-                            <h3>New York</h3>
-                            <p>We love the Big Apple!</p>
-                        </div>
-                        </div>
+                                    <div class="item">
+                                        <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="New York"/>
+                                        <div class="carousel-caption">
+                                            <h3>New York</h3>
+                                            <p>We love the Big Apple!</p>
+                                    </div>
+                                    </div>
                     </div>
-                            </div>
-                            </div>
+            </div>
+        </div>
     )
 }
 

@@ -6,12 +6,13 @@ function ContactUs() {
             <Head>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
             </Head>
+            <h2 className='contact-us-title'>CONTACT US</h2>
             <div className='contact-holder'>
             <div className='contact-holder-single'>
             <p>Your name</p>
-            <input type='text'></input>
+            <input className='input-name' type='text'></input>
             <p>Message</p>
-            <input type='text'></input>
+            <input className='input-message' type='text'></input>
             <button type="button" className="btn btn-success">Send</button>
             </div>
             <div className='contach-holder-single'>

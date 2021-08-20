@@ -4,13 +4,9 @@ import { useState, useEffect } from 'react';
 function OurWork() {
     const data = [
         { id: 1, text: 'something' },
-        { id: 2, text: 'something cool' },
-        { id: 3, text: 'and another one' },
-        { id: 4, text: 'and another cool one'},
-        { id: 5, text: 'and another cool pic'},
-        { id: 6, text: 'and another cool picture'},
-        { id: 7, text: 'and another cool cool picture'},
-        { id: 8, text: 'and another cool cool cool picture'}
+        { id: 2, text: 'something' },
+        { id: 3, text: 'something' },
+        { id: 4, text: 'something' },
       ]
       
     return(
@@ -29,18 +25,106 @@ function OurWork() {
                     <li><a href='#Project3' data-toggle='tab'>Project 3</a></li>
                 </ul>
                 <div className='tab-content'>
-                    <div className='tab-pane fade in active' id='Project1'>
-                        <p>First Para hi there</p>
-                    </div>
-                    <div className='tab-pane fade' id='Project2'>
-                        <p>Second Para hi there</p>
-                    </div>
-                    <div className='tab-pane fade' id='Project3'>
-                        <p>Third Para hi there</p>
-                    </div>
+                <div className='tab-pane fade in active' id='Project1'>
+                   <div className='product-holder'>
+                       <div className='product-holder-row'>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                       </div>
+                       <div className='product-holder-row'>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                       </div>
+                   </div>
+                </div> 
+                <div className='tab-pane fade in active' id='Project2'>  
+                <div className='product-holder'>
+                       <div className='product-holder-row'>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                       </div>
+                       <div className='product-holder-row'>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                       </div>
+                   </div> 
                 </div>
-            </div> 
-    </div>       
+                <div className='tab-pane fade in active' id='Project3'>
+                <div className='product-holder'>
+                       <div className='product-holder-row'>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                       </div>
+                       <div className='product-holder-row'>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                           <div className='product-holder-single'>
+                           <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="Chania"/>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                </div>
+       </div>
+    </div> 
+         
     )
 }
 

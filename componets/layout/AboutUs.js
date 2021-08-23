@@ -1,14 +1,9 @@
+import GoogleMapReact from 'google-map-react';
+import GoogleMap from '../layout/GoogleMap';
 
-import Head from 'next/head';
 function AboutUs() {
     return(
         <div>
-            <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-            </Head>
             <h2 className='contact-us-title'>ABOUT US</h2>
             <div className='about-us-holder'>
                 <div className='about-us-single'>

@@ -1,7 +1,8 @@
 import { Nav } from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 function OurWork() {
     return(
-                        <Nav justify variant="tabs" defaultActiveKey="/home">
+                <Nav justify variant="tabs" defaultActiveKey="/home">
                 <Nav.Item>
                     <Nav.Link >Active</Nav.Link>
                 </Nav.Item>

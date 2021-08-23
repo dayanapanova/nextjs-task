@@ -10,6 +10,7 @@ import { useRef } from 'react';
 import Navigation from '../componets/layout/Navigation';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
+import { Tabs, Tab, Sonnet } from 'react-bootstrap';
 function HomePage() {
     const ContactUsSection = useRef(null);
     const goToContactUsSection = () => {

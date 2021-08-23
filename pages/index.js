@@ -2,10 +2,13 @@
 import Slider from '../componets/layout/Slider';
 import Dropdown from "../componets/layout/Dropdown";
 import AboutUs from "../componets/layout/AboutUs";
-import OurWork from "../componets/layout/OurWork";
 import ContactUs from "../componets/layout/ContactUs";
+import OurWork from '../componets/layout/OurWork';
+import OurProducts from '../componets/layout/OurProducts';
 import  ScrollToTop  from "../componets/layout/ScrollToTop";
 import { useRef } from 'react';
+import Navigation from '../componets/layout/Navigation';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 function HomePage() {
     const ContactUsSection = useRef(null);
     const goToContactUsSection = () => {
@@ -18,20 +21,11 @@ function HomePage() {
     return (
             <div>
                     <ScrollToTop/>
-                    <header className='header'>
-                        <div>Logo</div>
-                        <ul className='nav-items-links'>
-                            <li><a>Home</a></li>
-                            <li><a>About us</a></li>
-                            <li><a>Our Work</a></li>
-                            <li><a>Our Products</a></li>
-                            <li><a onClick={goToContactUsSection}>Contact Us</a></li>
-                            <li><Dropdown/></li>
-                        </ul>
-                    </header>
+                    <Navigation/>
                     <Slider/>
                     <AboutUs/>
                     <OurWork/>
+                    <OurProducts/>
                     <ContactUs ref={ContactUsSection}/>
             </div>
             

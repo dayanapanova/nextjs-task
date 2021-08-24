@@ -1,15 +1,41 @@
-import Head from 'next/head';
+import { Tab } from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import OurProduct from './OurProduct';
 function OurProducts() {
     return(
         <div>
-            <Head>
-            <meta charset="utf-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-            </Head>
-            
+            <h2 className='title'>OUR PRODUCTS</h2>
+        <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                    <Row>
+                        <Col sm={3}>
+                        <Nav variant="pills" className="flex-column">
+                            <Nav.Item>
+                            <Nav.Link eventKey="first">Product 1</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                            <Nav.Link eventKey="second">Product 2</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                            <Nav.Link eventKey="third">Product 3</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                        </Col>
+                        <Col sm={9}>
+                        <Tab.Content>
+                            <Tab.Pane eventKey="first">
+                            <OurProduct/>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="second">
+                            <OurProduct/>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="third">
+                            <OurProduct/>
+                            </Tab.Pane>
+                        </Tab.Content>
+                        </Col>
+                    </Row>
+                    </Tab.Container>
         </div>
     )
 }

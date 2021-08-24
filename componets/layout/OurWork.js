@@ -1,18 +1,39 @@
-import { Nav } from 'react-bootstrap';
+import { Tabs, Tab } from 'react-bootstrap';
 import {Container, Row, Col} from 'react-bootstrap';
 function OurWork() {
     return(
-                <Nav justify variant="tabs" defaultActiveKey="/home">
-                <Nav.Item>
-                    <Nav.Link >Active</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="link-1">Loooonger NavLink</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="link-2">Link</Nav.Link>
-                </Nav.Item>
-            </Nav>
+        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
+        <Tab eventKey="home" title="Home">
+        <Container fluid>
+                    <Row>
+                        <Col lg={3}>1 of 1</Col>
+                        <Col lg={3}>1 of 1</Col>
+                        <Col lg={3}>1 of 1</Col>
+                        <Col lg={3}>1 of 1</Col>
+                    </Row>
+            </Container>
+        </Tab>
+        <Tab eventKey="profile" title="Profile">
+        <Container fluid>
+                    <Row>
+                        <Col lg={3}>1 of 1</Col>
+                        <Col lg={3}>1 of 1</Col>
+                        <Col lg={3}>1 of 1</Col>
+                        <Col lg={3}>1 of 1</Col>
+                    </Row>
+            </Container>
+        </Tab>
+        <Tab eventKey="contact" title="Contact">
+        <Container fluid>
+                    <Row>
+                        <Col lg={3}>1 of 1</Col>
+                        <Col lg={3}>1 of 1</Col>
+                        <Col lg={3}>1 of 1</Col>
+                        <Col lg={3}>1 of 1</Col>
+                    </Row>
+            </Container>
+        </Tab>
+      </Tabs>
     )
 }
 

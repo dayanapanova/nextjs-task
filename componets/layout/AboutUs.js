@@ -1,6 +1,7 @@
 import GoogleMapReact from 'google-map-react';
 import SimpleMap from './SimpleMap';
-
+import { withNamespaces } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 function AboutUs() {
     return(
         <div>

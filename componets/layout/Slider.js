@@ -37,8 +37,8 @@ function Slider() {
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-</Carousel>
-    )
+        </Carousel>
+    )           
 }
 
 export default Slider;

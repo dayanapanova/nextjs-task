@@ -1,6 +1,5 @@
 
 import Slider from '../componets/layout/Slider';
-import Dropdown from "../componets/layout/Dropdown";
 import AboutUs from "../componets/layout/AboutUs";
 import ContactUs from "../componets/layout/ContactUs";
 import OurWork from '../componets/layout/OurWork';

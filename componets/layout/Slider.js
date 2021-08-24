@@ -5,7 +5,7 @@ function Slider() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="New York"
+                src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg"
                 alt="First slide"
                 />
                 <Carousel.Caption>
@@ -16,7 +16,7 @@ function Slider() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="New York"
+                src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg"
                 alt="Second slide"
                 />
 
@@ -28,7 +28,7 @@ function Slider() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg" alt="New York"
+                src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg"
                 alt="Third slide"
                 />
 

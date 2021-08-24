@@ -1,5 +1,5 @@
 import GoogleMapReact from 'google-map-react';
-import GoogleMap from '../layout/GoogleMap';
+import SimpleMap from './SimpleMap';
 
 function AboutUs() {
     return(
@@ -17,7 +17,7 @@ function AboutUs() {
                     <p>Lorem ipsum dolor et</p>
                 </div>
                 <div className='about-us-single'>
-                    Some text
+                    <SimpleMap/>
                 </div>
             </div>
         </div>

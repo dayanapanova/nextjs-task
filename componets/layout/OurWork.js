@@ -12,11 +12,6 @@ function OurWork() {
                 <Nav.Item>
                     <Nav.Link eventKey="link-2">Link</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="link-3">
-                    Disabled
-                    </Nav.Link>
-                </Nav.Item>
             </Nav>
     )
 }

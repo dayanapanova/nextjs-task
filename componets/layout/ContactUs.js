@@ -16,9 +16,18 @@ function ContactUs() {
             <button type="button" className="btn btn-success">Send</button>
             </div>
             <div className='contact-holder-single'>
-                <h3>Lorem ipsum dolor</h3>
-                <h3>Lorem ipsum dolor</h3>
-                <h3>Lorem ipsum dolor</h3>
+                    <div className='contact-holder-single-para'>
+                        <i class="fas fa-check"></i>
+                        <h3>Lorem ipsum dolor</h3>
+                    </div>
+                    <div className='contact-holder-single-para'>
+                        <i class="fas fa-check"></i>
+                        <h3>Lorem ipsum dolor</h3>
+                    </div>
+                    <div className='contact-holder-single-para'>
+                        <i class="fas fa-check"></i>
+                        <h3>Lorem ipsum dolor</h3>
+                    </div>
             </div>
             </div>
         </Fragment>

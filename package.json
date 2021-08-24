@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.0",
+    "font-awesome": "^4.7.0",
     "google-map-react": "^2.1.10",
     "google-maps-react": "^2.0.6",
     "i18next": "^20.4.0",
@@ -23,6 +24,7 @@
     "swiper": "^6.8.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0"
   }

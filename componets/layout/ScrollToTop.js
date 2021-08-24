@@ -20,7 +20,7 @@ function ScrollToTop() {
     return(
         <div className='scroll-to-top cursor-pointer text-center'
         onClick={scrollToTop}>
-            <i className='icon fas fa-chevron-up'>^</i>
+            <i className='icon fas fa-chevron-up'></i>
         </div>
     )
 }

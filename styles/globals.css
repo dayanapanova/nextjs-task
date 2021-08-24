@@ -1,13 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:ital,wght@1,500&display=swap');
 * {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Roboto", cursive;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .title {
-  margin: 70px;
+  margin: 55px;
   text-align: center;
 }
 .contact-holder {
@@ -25,7 +25,9 @@
   margin: 20px;
 }
 
-.contact-holder-single h3 {
+.contact-holder-single-para {
+  display: flex;
+  justify-content: space-around;
   margin: 20px;
 }
 

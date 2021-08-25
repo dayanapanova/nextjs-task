@@ -19,7 +19,6 @@ function Slider() {
                 src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg"
                 alt="Second slide"
                 />
-
                 <Carousel.Caption>
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -31,7 +30,6 @@ function Slider() {
                 src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg"
                 alt="Third slide"
                 />
-
                 <Carousel.Caption>
                 <h3>Third slide label</h3>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

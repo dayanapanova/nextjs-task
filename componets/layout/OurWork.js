@@ -50,7 +50,7 @@ function OurWork() {
                         <Col lg={3}><img height='120px' width='150px' src="https://picsum.photos/200/300?random=21"/></Col>
                         <Col lg={3}><img height='120px' width='150px' src="https://picsum.photos/200/300?random=22"/></Col>
                         <Col lg={3}><img height='120px' width='150px' src="https://picsum.photos/200/300?random=23"/></Col>
-                        <Col lg={3}><img height='120px' width='150px' src="https://picsum.photos/200/300?random=24"/></Col>
+                        <Col lg={3}><img height='120px' width='150px' src="https://picsum.photos/200/300?random=2"/></Col>
                     </Row>
             </Container>
         </Tab>

@@ -1,11 +1,7 @@
 import { Fragment } from 'react';
-import Head from 'next/head';
 function ContactUs() {
     return(
         <Fragment>
-            <Head>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
-            </Head>
             <h2 className='title'>CONTACT US</h2>
             <div className='contact-holder'>
             <div className='contact-holder-single'>

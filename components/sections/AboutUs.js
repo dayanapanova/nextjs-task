@@ -1,4 +1,4 @@
-import GoogleMapReact from 'google-map-react';
+
 import SimpleMap from './SimpleMap';
 import { Fragment } from 'react';
 function AboutUs() {

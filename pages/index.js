@@ -10,6 +10,8 @@ import Navigation from '../componets/layout/Navigation';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import { Tabs, Tab, Sonnet } from 'react-bootstrap';
+import { useRouter } from 'next/dist/client/router';
+
 function HomePage() {
     const ContactUsSection = useRef(null);
     const goToContactUsSection = () => {

@@ -5,7 +5,7 @@ import OurProduct from './OurProduct';
 function OurProducts() {
     return(
         <div>
-            <h2 className='title'>OUR PRODUCTS</h2>
+            <h2 className='title' id='products'>OUR PRODUCTS</h2>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                     <Row>
                         <Col sm={3}>

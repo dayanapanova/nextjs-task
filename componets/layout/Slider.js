@@ -3,9 +3,9 @@ function Slider() {
     return (
         <Carousel>
             <Carousel.Item>
-                <img
+                <img className='img-cover'
                 className="d-block w-100"
-                src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg"
+                src='https://i.picsum.photos/id/121/1600/1067.jpg?hmac=QDrnlQAvC_54xDpx2afpzKMbjCZvnRljseYvkK8XPCQ'
                 alt="First slide"
                 />
                 <Carousel.Caption>
@@ -14,9 +14,9 @@ function Slider() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img
+                <img className='img-cover'
                 className="d-block w-100"
-                src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg"
+                src="https://i.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w"
                 alt="Second slide"
                 />
                 <Carousel.Caption>
@@ -25,9 +25,9 @@ function Slider() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img
+                <img className='img-cover'
                 className="d-block w-100"
-                src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg"
+                src="https://i.picsum.photos/id/179/2048/1365.jpg?hmac=GJyDjrvfBfjPfJPqSBd2pX6sjvsGbG10d21blr5bTS8"
                 alt="Third slide"
                 />
                 <Carousel.Caption>

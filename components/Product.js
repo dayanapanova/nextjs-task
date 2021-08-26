@@ -6,8 +6,8 @@ function OurProduct() {
         <Fragment>
         <Container>
             <Row>
-                <Col lg={3}><img width='200px' height='140px' src="https://picsum.photos/200/300?random=1"/></Col>
-                <Col lg={9}>
+                <Col lg={4}><img width='200px' height='140px' src="https://picsum.photos/200/300?random=1"/></Col>
+                <Col lg={8}>
                     <h4>Product 1</h4>
                     <p>Lorem picsum dolor</p>
                     <p>Lorem picsum dolor</p>

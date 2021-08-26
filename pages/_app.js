@@ -6,8 +6,8 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import en from '../i18n/en.json';
 import bg from '../i18n/bg.json';
-import ScrollToTop from '../components/sections/ScrollToTop';
-import Navigation from '../components/sections/Navigation';
+import ScrollToTop from '../components/ScrollToTop';
+import Navigation from '../components/Navigation';
 
 i18n
   .use(LanguageDetector)

@@ -1,11 +1,12 @@
 import { Tab } from 'react-bootstrap';
-import { Row, Col} from 'react-bootstrap';
+import { Row, Col, Container} from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
-import OurProduct from './OurProduct';
+import Product from '../Product';
 function OurProducts() {
     return(
         <div>
             <h2 className='title' id='products'>OUR PRODUCTS</h2>
+            <Container>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                     <Row>
                         <Col sm={3}>
@@ -24,18 +25,19 @@ function OurProducts() {
                         <Col sm={9}>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
-                            <OurProduct/>
+                            <Product/>
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">
-                            <OurProduct/>
+                            <Product/>
                             </Tab.Pane>
                             <Tab.Pane eventKey="third">
-                            <OurProduct/>
+                            <Product/>
                             </Tab.Pane>
                         </Tab.Content>
                         </Col>
                     </Row>
                     </Tab.Container>
+                    </Container>
         </div>
     )
 }

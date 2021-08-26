@@ -9,7 +9,7 @@ function Navigation() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home"><Link activeClass='active' to='home' spy={true} smooth={true}>t('home')</Link></Nav.Link>
+                <Nav.Link href="#home"><Link activeClass='active' to='home' spy={true} smooth={true}>{t('home')}</Link></Nav.Link>
                 <Nav.Link href="#home"><Link to='about' spy={true} smooth={true}>About us</Link></Nav.Link>
                 <Nav.Link href="#home"><Link to='work' spy={true} smooth={true}>Our work</Link></Nav.Link>
                 <Nav.Link href="#home"><Link to='products' spy={true} smooth={true}>Our products</Link></Nav.Link>

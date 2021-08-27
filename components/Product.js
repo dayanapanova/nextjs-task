@@ -1,4 +1,5 @@
-import Image from 'next/image';
+
+import { Image } from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ListGroup } from 'react-bootstrap';
 
@@ -14,7 +15,12 @@ function Product({
             <Container>
                 <Row>
                     <Col lg={4}>
-                        <Image width='200' height='140' loader={() => image} src={image} alt={title} />
+                        <Image
+                            loader={() => image}
+                            src={image}
+                            alt={title}
+                            fluid
+                        />
                     </Col>
                     <Col lg={8}>
                         <h4>{title}</h4>

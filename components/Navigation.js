@@ -34,7 +34,7 @@ function Navigation() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <div className="main-navigation">
-                    <Image className='image-circle' src="https://i.picsum.photos/id/274/3824/2520.jpg?hmac=OOl_w8LX_psogyruUe1z986AuqeS_TY7rLxAFgG4wrc" fluid />
+                    <Image className='image-circle' src="http://www.w3.org/1999/xlink" fluid alt='Logo'/>
                     <Nav className="me-auto">
                         {NAV_ITEMS.map(({ id, label }, index) => (
                             <Nav.Link key={`nav-item-${id}-${label}-${index}`}>

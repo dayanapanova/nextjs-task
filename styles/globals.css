@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:ital,wght@1,500&display=swap');
 * {
   font-family: "Roboto", cursive;
@@ -41,7 +42,7 @@
   justify-content: space-around;
   margin: 20px;
 }
-  
+
 .input-name {
   width: 340px;
   margin: 10px;
@@ -102,6 +103,35 @@
   animation: scrollTop 0.5s alternate ease infinite;
 }
 
+.work-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .work-item {
+    height: 180px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .work-item {
+    height: 220px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .work-item {
+    height: 250px;
+  }
+}
+
+.work-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @keyframes scrollTop {
   from {
     transform: translateY(2px);
@@ -120,7 +150,6 @@
     flex-basis: 100%;
   }
 }
-
 
 
 

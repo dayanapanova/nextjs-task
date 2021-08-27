@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
-
+import { Image } from 'react-bootstrap';
 function Navigation() {
     const { t, i18n } = useTranslation();
 
@@ -33,6 +33,8 @@ function Navigation() {
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
+                    <div className="main-navigation">
+                    <Image className='image-circle' src="https://i.picsum.photos/id/274/3824/2520.jpg?hmac=OOl_w8LX_psogyruUe1z986AuqeS_TY7rLxAFgG4wrc" fluid />
                     <Nav className="me-auto">
                         {NAV_ITEMS.map(({ id, label }, index) => (
                             <Nav.Link key={`nav-item-${id}-${label}-${index}`}>
@@ -51,6 +53,7 @@ function Navigation() {
                             ))}
                         </NavDropdown>
                     </Nav>
+                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

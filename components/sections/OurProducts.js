@@ -24,7 +24,7 @@ function OurProducts() {
                         </Col>
                         <Col sm={9}>
                         <Tab.Content>
-                            <Tab.Pane eventKey="first">
+                        <Tab.Pane eventKey="first">
                             <Product/>
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">

@@ -7,11 +7,11 @@ function ContactUs() {
             <h2 className='title' id='contact'>{t('contact')}</h2>
             <div className='contact-holder'>
             <div className='contact-holder-single'>
-            <p>Your name</p>
+            <p>{t('name')}</p>
             <input className='input-name' type='text'></input>
-            <p>Message</p>
+            <p>{t('message')}</p>
             <input className='input-message' type='text'></input>
-            <button type="button" className="btn btn-success">Send</button>
+            <button type="button" className="btn btn-success">{t('send')}</button>
             </div>
             <div className='contact-holder-single'>
                     <div className='contact-holder-single-para'>

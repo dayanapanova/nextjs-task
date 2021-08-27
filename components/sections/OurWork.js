@@ -6,7 +6,7 @@ function OurWork() {
     const { t } = useTranslation();
     const PROJECTS = [
         {
-            title: 'Project 1',
+            title: t('project1'),
             images: [
                 'https://picsum.photos/200/300?random=1',
                 'https://picsum.photos/200/300?random=2',
@@ -15,7 +15,7 @@ function OurWork() {
             ]
         },
         {
-            title: 'Project 2',
+            title: t('project2'),
             images: [
                 'https://picsum.photos/200/300?random=5',
                 'https://picsum.photos/200/300?random=6',
@@ -24,7 +24,7 @@ function OurWork() {
             ]
         },
         {
-            title: 'Project 3',
+            title: t('project3'),
             images: [
                 'https://picsum.photos/200/300?random=9',
                 'https://picsum.photos/200/300?random=10',

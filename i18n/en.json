@@ -6,5 +6,21 @@
     "contact": "Contact us",
     "en-GB": "English",
     "en": "English",
-    "bg": "Bulgarian"
+    "bg": "Bulgarian",
+    "project1": "Project 1",
+    "project2": "Project 2",
+    "project3": "Project 3",
+    "product1": "Product 1",
+    "product2": "Product 2",
+    "product3": "Product 3",
+    "description1": "Test description product 1",
+    "description2": "Test description product 2",
+    "description3": "Test description product 3",
+    "name": "Your name",
+    "message": "Your message",
+    "send": "Send",
+    "item1": "Item 1",
+    "item2": "Item 2",
+    "item3": "Item 3"
+    
 }

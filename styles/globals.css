@@ -10,6 +10,12 @@
   margin: 55px;
   text-align: center;
 }
+
+.image-circle {
+  width: 80px;
+  height: 80px;
+}
+
 .contact-holder {
   width: 700px;
   height: 350px;
@@ -70,6 +76,11 @@
   margin: 10px;
 }
 
+.map-holder {
+  width: 300px;
+  height: 300px;
+}
+
 .scroll-to-top {
   position: fixed;
   bottom: 12px;
@@ -85,16 +96,6 @@
 .scroll-to-top .icon {
   margin-top: 10px;
   animation: scrollTop 0.5s alternate ease infinite;
-}
-
-.map-holder {
-  width: 300px;
-  height: 300px;
-}
-
-.image-circle {
-  width: 80px;
-  height: 80px;
 }
 
 @keyframes scrollTop {

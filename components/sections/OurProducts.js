@@ -27,14 +27,14 @@ function OurProducts() {
             image: 'https://picsum.photos/200/300?random=2',
             description: t("description2"),
             firstList: [
-                'Item 1',
-                'Item 2',
-                'Item 3',
+                t('item1'),
+                t('item2'),
+                t('item3'),
             ],
             secondList: [
-                'Item 1',
-                'Item 2',
-                'Item 3',
+                t('item1'),
+                t('item2'),
+                t('item3'),
             ],
         },
         {
@@ -42,14 +42,14 @@ function OurProducts() {
             image: 'https://picsum.photos/200/300?random=3',
             description: t("description3"),
             firstList: [
-                t('Item 1'),
-                t('Item 2'),
-                t('Item 3'),
+                t('item1'),
+                t('item2'),
+                t('item3'),
             ],
             secondList: [
-                t('Item 1'),
-                t('Item 2'),
-                t('Item 3'),
+                t('item1'),
+                t('item2'),
+                t('item3'),
             ],
         }
     ];

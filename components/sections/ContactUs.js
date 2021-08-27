@@ -1,8 +1,10 @@
 import { Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
 function ContactUs() {
+    const { t } = useTranslation();
     return(
         <Fragment>
-            <h2 className='title' id='contact'>CONTACT US</h2>
+            <h2 className='title' id='contact'>{t('contact')}</h2>
             <div className='contact-holder'>
             <div className='contact-holder-single'>
             <p>Your name</p>

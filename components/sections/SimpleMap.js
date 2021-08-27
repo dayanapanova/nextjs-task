@@ -10,7 +10,7 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
           };
 
           return (
-            <div style={{ height: '300px', width: '300px' }}>
+            <div className="map-holder">
               <GoogleMapReact
                 bootstrapURLKeys={{ key: "" }}
                 defaultCenter={defaultProps.center}

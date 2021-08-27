@@ -9,8 +9,8 @@ function OurProducts() {
     const PRODUCTS = [
         {
             title: t('product1'),
-            image: 'https://picsum.photos/200/300?random=1',
-            description: t("description1"),
+            image: 'https://picsum.photos/500/300?random=1',
+            description: t("loremIpsum"),
             firstList: [
                 t("item1"),
                 t("item2"),
@@ -24,39 +24,39 @@ function OurProducts() {
         },
         {
             title: t('product2'),
-            image: 'https://picsum.photos/200/300?random=2',
-            description: t("description2"),
+            image: 'https://picsum.photos/500/300?random=2',
+            description: t("loremIpsum"),
             firstList: [
-                t('item1'),
-                t('item2'),
-                t('item3'),
+                'Item 1',
+                'Item 2',
+                'Item 3',
             ],
             secondList: [
-                t('item1'),
-                t('item2'),
-                t('item3'),
+                'Item 1',
+                'Item 2',
+                'Item 3',
             ],
         },
         {
             title: t('product3'),
-            image: 'https://picsum.photos/200/300?random=3',
-            description: t("description3"),
+            image: 'https://picsum.photos/500/300?random=3',
+            description: t("loremIpsum"),
             firstList: [
-                t('item1'),
-                t('item2'),
-                t('item3'),
+                t('Item 1'),
+                t('Item 2'),
+                t('Item 3'),
             ],
             secondList: [
-                t('item1'),
-                t('item2'),
-                t('item3'),
+                t('Item 1'),
+                t('Item 2'),
+                t('Item 3'),
             ],
         }
     ];
 
     return (
-        <div>
-            <h2 className='title' id='products'>{t('product')}</h2>
+        <section className="section" id="products">
+            <h2 className='title'>{t('product')}</h2>
             <Container>
                 <Tab.Container defaultActiveKey="product-0">
                     <Row>
@@ -87,7 +87,7 @@ function OurProducts() {
                     </Row>
                 </Tab.Container>
             </Container>
-        </div>
+        </section>
     )
 }
 

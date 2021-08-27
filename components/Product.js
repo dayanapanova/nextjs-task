@@ -1,4 +1,3 @@
-
 import { Image } from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ListGroup } from 'react-bootstrap';
@@ -11,18 +10,20 @@ function Product({
     secondList = [],
 }) {
     return (
-        <>
+        <div className="product-item">
             <Container>
                 <Row>
-                    <Col lg={4}>
-                        <Image
-                            loader={() => image}
-                            src={image}
-                            alt={title}
-                            fluid
-                        />
+                    <Col lg={6}>
+                        <div className="image">
+                            <Image
+                                loader={() => image}
+                                src={image}
+                                alt={title}
+                                fluid
+                            />
+                        </div>
                     </Col>
-                    <Col lg={8}>
+                    <Col lg={6}>
                         <h4>{title}</h4>
                         <p>{description}</p>
                     </Col>
@@ -53,7 +54,7 @@ function Product({
                     )}
                 </Row>
             </Container>
-        </>
+        </div>
     )
 }
 

@@ -1,10 +1,9 @@
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
-import { Image } from 'react-bootstrap';
+
 function Navigation() {
     const { t, i18n } = useTranslation();
-
     const NAV_ITEMS = [
         {
             label: t('home'),
@@ -29,17 +28,22 @@ function Navigation() {
     ];
 
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar className="main-navigation" expand="md">
             <Container>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <div className="main-navigation">
-                    <Image className='image-circle' src="http://www.w3.org/1999/xlink" fluid alt='Logo'/>
-                    <Nav className="me-auto">
+                <Navbar.Brand>Next.JS</Navbar.Brand>
+                <Navbar.Toggle aria-controls="main-navbar-nav" />
+                <Navbar.Collapse className="justify-content-end" id="main-navbar-nav">
+                    <Nav>
                         {NAV_ITEMS.map(({ id, label }, index) => (
-                            <Nav.Link key={`nav-item-${id}-${label}-${index}`}>
-                                <Link to={id} spy={true} smooth={true}>{label}</Link>
-                            </Nav.Link>
+                            <Link
+                                key={`nav-item-${id}-${label}-${index}`}
+                                to={id}
+                                spy={true}
+                                smooth={true}
+                                className="nav-link"
+                            >
+                                {label}
+                            </Link>
                         ))}
 
                         <NavDropdown title={t(i18n.language)}>
@@ -53,7 +57,6 @@ function Navigation() {
                             ))}
                         </NavDropdown>
                     </Nav>
-                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

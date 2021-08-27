@@ -1,34 +1,53 @@
-import { Fragment } from 'react';
+import {
+    Container,
+    Row,
+    Col,
+    Form,
+    Button
+} from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+
 function ContactUs() {
     const { t } = useTranslation();
-    return(
-        <Fragment>
-            <h2 className='title' id='contact'>{t('contact')}</h2>
-            <div className='contact-holder'>
-            <div className='contact-holder-single'>
-            <p>{t('name')}</p>
-            <input className='input-name' type='text'></input>
-            <p>{t('message')}</p>
-            <input className='input-message' type='text'></input>
-            <button type="button" className="btn btn-success">{t('send')}</button>
-            </div>
-            <div className='contact-holder-single'>
-                    <div className='contact-holder-single-para'>
-                        <i className="fas fa-check"></i>
-                        <h3>Lorem ipsum dolor</h3>
-                    </div>
-                    <div className='contact-holder-single-para'>
-                        <i className="fas fa-check"></i>
-                        <h3>Lorem ipsum dolor</h3>
-                    </div>
-                    <div className='contact-holder-single-para'>
-                        <i className="fas fa-check"></i>
-                        <h3>Lorem ipsum dolor</h3>
-                    </div>
-            </div>
-            </div>
-        </Fragment>
+    return (
+        <section className="section contact-section" id="contact">
+            <Container>
+                <h2 className='title'>{t('contact')}</h2>
+                <Row>
+                    <Col className='align-self-center' sm={6}>
+                        <Form>
+                            <Form.Group className="mb-3">
+                                <Form.Label>{t('email')}</Form.Label>
+                                <Form.Control type="email" placeholder="name@example.com" />
+                            </Form.Group>
+                            <Form.Group className="mb-3">
+                                <Form.Label>{t('message')}</Form.Label>
+                                <Form.Control as="textarea" rows={3} />
+                            </Form.Group>
+                            <div className="mt-4 text-center">
+                                <Button size="lg">{t('send')}</Button>
+                            </div>
+                        </Form>
+                    </Col>
+                    <Col className='align-self-center' sm={6}>
+                        <div className="contact-info">
+                            <div className='contact-item'>
+                                <i className="fas fa-check"></i>
+                                <h3>Lorem ipsum dolor</h3>
+                            </div>
+                            <div className='contact-item'>
+                                <i className="fas fa-check"></i>
+                                <h3>Lorem ipsum dolor</h3>
+                            </div>
+                            <div className='contact-item'>
+                                <i className="fas fa-check"></i>
+                                <h3>Lorem ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
     )
 }
 

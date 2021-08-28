@@ -1,42 +1,46 @@
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Image } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+
 function Slider() {
+    const { t } = useTranslation();
+
+    const SLIDES = [
+        {
+            title: t('firstSlide'),
+            image: 'https://i.picsum.photos/id/121/1600/1067.jpg?hmac=QDrnlQAvC_54xDpx2afpzKMbjCZvnRljseYvkK8XPCQ',
+            description: t("loremIpsum"),
+        },
+        {
+            title: t('secondSlide'),
+            image: 'https://i.picsum.photos/id/121/1600/1067.jpg?hmac=QDrnlQAvC_54xDpx2afpzKMbjCZvnRljseYvkK8XPCQ',
+            description: t("loremIpsum"),
+        },
+        {
+            title: t('thirdSlide'),
+            image: 'https://i.picsum.photos/id/121/1600/1067.jpg?hmac=QDrnlQAvC_54xDpx2afpzKMbjCZvnRljseYvkK8XPCQ',
+            description: t("loremIpsum"),
+        },
+    ];
+
     return (
-        <Carousel>
-            <Carousel.Item>
-                <img className='img-cover'
-                className="d-block w-100"
-                src='https://i.picsum.photos/id/121/1600/1067.jpg?hmac=QDrnlQAvC_54xDpx2afpzKMbjCZvnRljseYvkK8XPCQ'
-                alt="First slide"
-                />
-                <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className='img-cover'
-                className="d-block w-100"
-                src="https://i.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w"
-                alt="Second slide"
-                />
-                <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className='img-cover'
-                className="d-block w-100"
-                src="https://i.picsum.photos/id/179/2048/1365.jpg?hmac=GJyDjrvfBfjPfJPqSBd2pX6sjvsGbG10d21blr5bTS8"
-                alt="Third slide"
-                />
-                <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
-    )           
+        <section className="slider-section">
+            <Carousel>
+                {SLIDES.map(({ title, image, description }, index)=> (
+                    <Carousel.Item key={`slide-${title}-${index}`}>
+                        <Image
+                            className='img-cover d-block w-100'
+                            src={image}
+                            alt={title}
+                        />
+                        <Carousel.Caption>
+                            <h3>{title}</h3>
+                            <p>{description}</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                ))}
+            </Carousel>
+        </section>
+    )
 }
 
 export default Slider;

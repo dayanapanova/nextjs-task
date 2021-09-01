@@ -15,8 +15,15 @@ function ContactUs() {
         toast.success("Your message was sent!")
     };
     const { register, handleSubmit } = useForm();
-    const onSubmit = (data) => {
-        console.log('form data', data);
+    const onSubmit = (formData) => {
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        })
+        .then(response => {
+            showToast();
+        })
     };
     return (
         <section className="section contact-section" id="contact">
@@ -25,9 +32,13 @@ function ContactUs() {
                 <Row>
                     <Col className='align-self-center' sm={6}>
                         <Form onSubmit={handleSubmit(onSubmit)}>
-                            <Form.Group className="mb-3">
+                        <Form.Group className="mb-3" >
+                                <Form.Label>{t('name')}</Form.Label>
+                                <Form.Control  {...register("name")}/>
+                            </Form.Group>
+                            <Form.Group className="mb-3" >
                                 <Form.Label>{t('email')}</Form.Label>
-                                <Form.Control  {...register("email")} type="email" placeholder="name@example.com" />
+                                <Form.Control  {...register("email")}  placeholder="name@example.com" />
                             </Form.Group>
                             <Form.Group className="mb-3">
                                 <Form.Label>{t('message')}</Form.Label>
@@ -36,14 +47,6 @@ function ContactUs() {
                             <div className="mt-4 text-center">
                                 <Button size="lg"
                                     type="submit"
-                                    onClick={()=> {
-                                        fetch('/api/contact', {
-                                            method: 'POST',
-                                            headers: { 'Content-Type': 'application/json' },
-                                            body: JSON.stringify({ name: 'Test name', email: 'test@test.com', message: 'test' })
-                                        })
-                                        .then(response => response.json())
-                                    }}
                                     >{t('send')}</Button>
                                     <ToastContainer/>
                             </div>

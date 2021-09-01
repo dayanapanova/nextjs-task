@@ -18,6 +18,7 @@
     "description3": "Test description product 3",
     "name": "Your name",
     "message": "Your message",
+    "email": "Еmail",
     "send": "Send",
     "item1": "Item 1",
     "item2": "Item 2",

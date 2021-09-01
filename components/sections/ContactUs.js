@@ -3,7 +3,9 @@ import {
     Row,
     Col,
     Form,
-    Button
+    Button,
+    Inpu,
+    InputGroup
 } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { ToastContainer, toast } from 'react-toastify';
@@ -37,17 +39,25 @@ function ContactUs() {
                 <Row>
                     <Col className='align-self-center' sm={6}>
                         <Form onSubmit={handleSubmit(onSubmit)}>
-                        <Form.Group className="mb-3" >
+                            <Form.Group className="mb-3" >
                                 <Form.Label>{t('name')}</Form.Label>
                                 <Form.Control  {...register("name")}/>
+                                {console.log(errors)}
                             </Form.Group>
                             <Form.Group className="mb-3" >
                                 <Form.Label>{t('email')}</Form.Label>
-                                <Form.Control  {...register("email")}  placeholder="name@example.com" />
+                                <Form.Control  {...register("email")}  placeholder="name@example.com" type='text' required isInvalid />
+                                {Boolean(errors?.email?.message) && (
+                                    <Form.Control.Feedback type="invalid">
+                                    {errors?.email?.message}
+                                </Form.Control.Feedback>
+                                )}      
+
                             </Form.Group>
                             <Form.Group className="mb-3">
                                 <Form.Label>{t('message')}</Form.Label>
                                 <Form.Control  {...register("message")} as="textarea" rows={3} />
+                                {errors.message && <p>{errors.message.message}</p>}
                             </Form.Group>
                             <div className="mt-4 text-center">
                                 <Button size="lg"
@@ -55,6 +65,7 @@ function ContactUs() {
                                     >{t('send')}</Button>
                                     <ToastContainer/>
                             </div>
+                            
                         </Form>
                     </Col>
                     <Col className='align-self-center' sm={6}>

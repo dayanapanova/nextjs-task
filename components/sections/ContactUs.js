@@ -4,8 +4,6 @@ import {
     Col,
     Form,
     Button,
-    Inpu,
-    InputGroup
 } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { ToastContainer, toast } from 'react-toastify';
@@ -17,7 +15,7 @@ function ContactUs() {
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(messageSchema)
       });
-    
+
     const onSubmit = (formData) => {
         fetch('/api/contact', {
             method: 'POST',
@@ -32,6 +30,37 @@ function ContactUs() {
             }
         })
     };
+
+    const FIELDS = [
+        {
+            component: Form.Control,
+            label: t('name'),
+            name: 'name',
+            componentProps: {
+                placeholder: 'Enter name',
+                type: 'text',
+            }
+        },
+        {
+            component: Form.Control,
+            label: t('email'),
+            name: 'email',
+            componentProps: {
+                placeholder: 'name@example.com',
+                type: 'text',
+            }
+        },
+        {
+            component: Form.Control,
+            label: t('message'),
+            name: 'message',
+            componentProps: {
+                as: 'textarea',
+                rows: 3,
+            }
+        }
+    ];
+
     return (
         <section className="section contact-section" id="contact">
             <Container>
@@ -39,33 +68,28 @@ function ContactUs() {
                 <Row>
                     <Col className='align-self-center' sm={6}>
                         <Form onSubmit={handleSubmit(onSubmit)}>
-                            <Form.Group className="mb-3" >
-                                <Form.Label>{t('name')}</Form.Label>
-                                <Form.Control  {...register("name")}/>
-                                {console.log(errors)}
-                            </Form.Group>
-                            <Form.Group className="mb-3" >
-                                <Form.Label>{t('email')}</Form.Label>
-                                <Form.Control  {...register("email")}  placeholder="name@example.com" type='text' required isInvalid />
-                                {Boolean(errors?.email?.message) && (
-                                    <Form.Control.Feedback type="invalid">
-                                    {errors?.email?.message}
-                                </Form.Control.Feedback>
-                                )}      
+                            {FIELDS.map(({ name, label, componentProps }, index)=> {
+                                const error = errors?.[name]?.message;
+                                const hasError = Boolean(error);
+                                return (
+                                    <Form.Group key={`${name}-${index}`} className="mb-3" >
+                                        <Form.Label>{label}</Form.Label>
+                                        <Form.Control {...register(name)} {... componentProps} isInvalid={hasError} />
+                                        {hasError && (
+                                            <Form.Control.Feedback type="invalid">
+                                                {errors?.[name]?.message}
+                                            </Form.Control.Feedback>
+                                        )}
+                                    </Form.Group>
+                                )
+                            })}
 
-                            </Form.Group>
-                            <Form.Group className="mb-3">
-                                <Form.Label>{t('message')}</Form.Label>
-                                <Form.Control  {...register("message")} as="textarea" rows={3} />
-                                {errors.message && <p>{errors.message.message}</p>}
-                            </Form.Group>
                             <div className="mt-4 text-center">
-                                <Button size="lg"
-                                    type="submit"
-                                    >{t('send')}</Button>
-                                    <ToastContainer/>
+                                <Button size="lg" type="submit">
+                                    {t('send')}
+                                </Button>
+                                <ToastContainer/>
                             </div>
-                            
                         </Form>
                     </Col>
                     <Col className='align-self-center' sm={6}>

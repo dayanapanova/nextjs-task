@@ -11,9 +11,6 @@ import { useForm } from 'react-hook-form';
 
 function ContactUs() {
     const { t } = useTranslation();
-    const showToast = () => {
-        toast.success("Your message was sent!")
-    };
     const { register, handleSubmit } = useForm();
     const onSubmit = (formData) => {
         fetch('/api/contact', {
@@ -22,7 +19,11 @@ function ContactUs() {
             body: JSON.stringify(formData)
         })
         .then(response => {
-            showToast();
+            if(response.ok) {
+                toast.success("Your message was sent!")
+            } else {
+                toast.error("Your message was not sent!")
+            }
         })
     };
     return (

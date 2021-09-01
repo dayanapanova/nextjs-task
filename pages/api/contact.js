@@ -1,10 +1,7 @@
 const { Client } = require('@notionhq/client');
 
-const TOKEN = 'secret_WddzLtDHwgyF7kOhmreLgXRHfP4KkzloJmmBYAqICMl';
-const databaseID = '46569b14fb694a87ba2f9f5f747846b8';
-
 const notion = new Client({
-  auth: TOKEN,
+  auth: process.env.NEXT_PUBLIC_NOTION_TOKEN,
 });
 
 export default async function handler(req, res) {
@@ -17,7 +14,7 @@ export default async function handler(req, res) {
     const { name, email, message } = req.body;
     await notion.pages.create({
       parent: {
-        database_id: databaseID,
+        database_id: process.env.NEXT_PUBLIC_NOTION_DATABASE_ID,
       },
       properties: {
         Name: {

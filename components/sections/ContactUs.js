@@ -20,7 +20,7 @@ function ContactUs() {
             message: event.target[2].value
         }
         const isValid = await messageSchema.isValid(messageData);
-        console.log(messageData);
+        console.log(isValid);
     }
     const onSubmit = (formData) => {
         fetch('/api/contact', {

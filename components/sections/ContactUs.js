@@ -8,20 +8,14 @@ import {
 import { useTranslation } from 'react-i18next';
 import { ToastContainer, toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
+import { yupResolver } from "@hookform/resolvers/yup";
 import { messageSchema } from '../../utils/validations/validations';
 function ContactUs() {
     const { t } = useTranslation();
-    const { register, handleSubmit } = useForm();
-    const createMessage = async (event) => {
-        event.preventDefault();
-        let messageData = {
-            name: event.target[0].value,
-            email: event.target[1].value,
-            message: event.target[2].value
-        }
-        const isValid = await messageSchema.isValid(messageData);
-        console.log(isValid);
-    }
+    const { register, handleSubmit, formState: { errors } } = useForm({
+        resolver: yupResolver(messageSchema)
+      });
+    
     const onSubmit = (formData) => {
         fetch('/api/contact', {
             method: 'POST',
@@ -42,7 +36,7 @@ function ContactUs() {
                 <h2 className='title'>{t('contact')}</h2>
                 <Row>
                     <Col className='align-self-center' sm={6}>
-                        <Form onSubmit={createMessage}>
+                        <Form onSubmit={handleSubmit(onSubmit)}>
                         <Form.Group className="mb-3" >
                                 <Form.Label>{t('name')}</Form.Label>
                                 <Form.Control  {...register("name")}/>

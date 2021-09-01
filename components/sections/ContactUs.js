@@ -8,7 +8,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import { ToastContainer, toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
-import { messageSchema } from '../Validations';
+import { messageSchema } from '../../utils/validations/validations';
 function ContactUs() {
     const { t } = useTranslation();
     const { register, handleSubmit } = useForm();
